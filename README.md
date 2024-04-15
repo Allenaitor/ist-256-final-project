@@ -3,7 +3,7 @@ The Following Changes Were done to the template
 1) Changed the background image on the index and contact page by editing the css file.
 2) Changed the template logo into a logo that represents my company.
 3) Created a JSON file that contains url of images to display in the website
-4) Added a Javascript function that reads from a JSON file to change the background image on the contact page every 5 seconds.
+4) Added a Javascript function using jquery that reads from a JSON file to change the background image on the contact page every 5 seconds.
 5) Added "HQ FOR FINDING SKYLANDERS!" tagline above searchbar.
 6) Changed the images in the "about us" section to popular characters.
 7) Edited tabs in "about us" section to display information about the company's mission, functions and polcies.
