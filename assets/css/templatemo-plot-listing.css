@@ -724,7 +724,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/skylands.jpeg);
+  background-image: url(../images/skylands.png);
   padding: 290px 0px 180px 0px;
   position: relative;
   overflow: hidden;
@@ -1339,11 +1339,11 @@ Page Heading
 --------------------------------------------- 
 */
 
-.page-heading {
+#page-heading {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/portal-background.gif);
+  background-image: url(../images/skybg1.png);
   padding: 230px 0px 120px 0px;
   position: relative;
   overflow: hidden;

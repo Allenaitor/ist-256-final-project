@@ -1,0 +1,16 @@
+{
+  "content" : [
+    {
+      "id"     : 0,
+      "image"  : "images/skybg1.png"
+    },
+    {
+      "id"     : 1,
+      "image"  : "images/skybg2.png"
+    },
+    {
+      "id"     : 2,
+      "image"  : "images/skybg3.png"
+    }
+  ]
+}

@@ -75,7 +75,7 @@ https://templatemo.com/tm-564-plot-listing
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="page-heading">
+  <div class="page-heading" id="page-heading">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
@@ -102,7 +102,7 @@ https://templatemo.com/tm-564-plot-listing
                 </div>
               </div>
               <div class="col-lg-6 align-self-center">
-                <form id="contact" action="" method="get">
+                <form id="contact" action="" method="post">
                   <div class="row">
                     <div class="col-lg-6">
                       <fieldset>
@@ -122,11 +122,11 @@ https://templatemo.com/tm-564-plot-listing
                     <div class="col-lg-12">
                       <span>Writing in regards about a potential...</span>
                       <ul>
-                        <li><input type="checkbox" name="option1" value="purchase"><span>Purchase</span></li>
-                        <li><input type="checkbox" name="option2" value="delivery"><span>Delivery</span></li>
-                        <li><input type="checkbox" name="option3" value="question"><span>Question</span></li>
-                        <li><input type="checkbox" name="option4" value="sell"><span>Sell</span></li>
-                        <li><input type="checkbox" name="option4" value="other"><span>Other</span></li>
+                        <li><input type="checkbox" name="motive" value="purchase"><span>Purchase</span></li>
+                        <li><input type="checkbox" name="motive" value="delivery"><span>Delivery</span></li>
+                        <li><input type="checkbox" name="motive" value="question"><span>Question</span></li>
+                        <li><input type="checkbox" name="motive" value="sell"><span>Sell</span></li>
+                        <li><input type="checkbox" name="motive" value="other"><span>Other</span></li>
                       </ul>
                     </div>
                     <div class="col-lg-12">
@@ -203,7 +203,7 @@ https://templatemo.com/tm-564-plot-listing
         </div>
         <div class="col-lg-12">
           <div class="sub-footer">
-            <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+            <p>Copyright © 2024 Skylanders Portal Gateway Co., Ltd. All Rights Reserved.
             <br>
 			Design: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a></p>
           </div>
@@ -220,7 +220,28 @@ https://templatemo.com/tm-564-plot-listing
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script type="text/javascript">
 
+    setInterval(doSomething, 5000);
+    var currentid = 1;
+    function doSomething() {
+      $.getJSON('images.json', function (data) {
+
+        "use strict";
+        var content = data.content;
+
+        $('.page-heading').ready(function () {
+
+          var c = content.find(o => o.id === currentid%3);
+          currentid++;
+          document.getElementById('page-heading').style.backgroundImage = "url(assets/"+c.image+")";
+        });
+
+      });
+    }
+
+
+  </script>
 </body>
 
 </html>
